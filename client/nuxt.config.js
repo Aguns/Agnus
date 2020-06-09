@@ -63,6 +63,7 @@ module.exports = {
     ["nuxt-validate"],
     ['@nuxtjs/axios'],
     ['@nuxtjs/auth'],
+    ["@nuxtjs/dotenv"]
 
  ],
  /*
@@ -81,6 +82,6 @@ module.exports = {
   },
 
   env: {
-    baseUrl: process.env.BASE_URL || 'https://192.168.3.106:5001/api'
+    baseUrl: process.env.BASE_URL || 'https://localhost:44342/api'
   }
 }
