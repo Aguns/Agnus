@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import productList from "@/components/inv/products/list";
+import productList from "@/components/inv/products/List";
 
 export default {
   layout: "dashboard",
