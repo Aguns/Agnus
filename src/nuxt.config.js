@@ -1,12 +1,23 @@
 const pkg = require("./package");
 
 module.exports = {
+  server: {
+    host: '0.0.0.0',
+  },
+  render: {
+    // working:
+    injectScripts: process.env.NODE_ENV === 'development'
+
+    // HMR not working:
+    // injectScripts: false,
+  },
+
   mode: 'spa',
   /*
   ** Headers of the page
   */
   head: {
-    title: 'Belutecnica',
+    title: 'Agnus Crm',
     meta: [
       {charset: 'utf-8'},
       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
