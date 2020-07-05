@@ -1,4 +1,4 @@
-before_script: cd src
+before_install: cd src
 
 language: node_js
 
