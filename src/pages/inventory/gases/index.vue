@@ -3,33 +3,81 @@
     <v-flex>
       <v-card>
         <v-btn-toggle>
-        <v-bottom-navigation color="primary" horizontal>
-
-          <v-btn v-for="document in documentTypes" :key="document.code" @click="openFrm(document)">
-            <span>{{document.code}}</span>
-            <v-icon>{{document.icon}}</v-icon>
-          </v-btn>
-        </v-bottom-navigation>
-      </v-btn-toggle>
-
+          <v-bottom-navigation color="primary" horizontal>
+            <v-btn
+              v-for="document in documentTypes"
+              :key="document.code"
+              @click="openFrm(document)"
+            >
+              <span>{{document.code}}</span>
+              <v-icon>{{document.icon}}</v-icon>
+            </v-btn>
+          </v-bottom-navigation>
+        </v-btn-toggle>
       </v-card>
     </v-flex>
     <v-flex>
-      <statement></statement>
+      <template>
+        <div id="page-forms">
+          <v-tabs>
+            <v-tab>Stock</v-tab>
+            <v-tab>Armazém</v-tab>
+            <v-tab>Validação</v-tab>
+            <v-tab>Extrato</v-tab>
+
+            <v-tab-item>
+              <v-card tile>
+                <v-card-text>
+                  <Stock></Stock>
+                </v-card-text>
+              </v-card>
+            </v-tab-item>
+
+            <v-tab-item>
+              <v-card tile>
+                <v-card-text>
+                  <Inventory-form></Inventory-form>
+                </v-card-text>
+              </v-card>
+            </v-tab-item>
+
+            <v-tab-item>
+              <v-card tile>
+                <v-card-text></v-card-text>
+              </v-card>
+            </v-tab-item>
+
+            <v-tab-item>
+              <v-card tile>
+                <v-card-text>
+                  <Statement-List></Statement-List>
+                </v-card-text>
+              </v-card>
+            </v-tab-item>
+          </v-tabs>
+        </div>
+      </template>
+    </v-flex>
+  </v-layout>
+</template>
     </v-flex>
     </v-layout>
 </template>
 <script>
-import Statement from "@/components/inv/gases/Statement";
+import InventoryForm from "@/components/inv/gases/Inventory";
+import StatementList from "@/components/inv/gases/StatementList";
+import Stock from "@/components/inv/gases/Stock";
 
 export default {
   layout: "inventory",
   components: {
-    Statement
+    InventoryForm,
+    StatementList,
+    Stock
   },
   data: () => ({
     documentTypes: [],
-    classifier: null,
+    classifier: null
   }),
   beforeMount: async function() {
     this.businessArea = await this.$store.dispatch(
@@ -37,9 +85,9 @@ export default {
       "businessArea"
     );
 
-    var fullPathEleInArray = this.$router.currentRoute.fullPath.split('/');
+    var fullPathEleInArray = this.$router.currentRoute.fullPath.split("/");
     let docType = fullPathEleInArray[fullPathEleInArray.length - 1];
-    
+
     this.documentTypes = await this.$store.dispatch(
       "getDataAsync",
       `documenttypes/${docType}`
@@ -93,7 +141,7 @@ export default {
   },
 
   created() {
-    console.log(`I'm loading this form 44444 now`)
+    console.log(`I'm loading this form 44444 now`);
   },
   methods: {
     openFrm(item) {
@@ -102,7 +150,7 @@ export default {
       this.$router.push(url);
 
       this.$forceUpdate();
-    },
+    }
   }
 };
 </script>
