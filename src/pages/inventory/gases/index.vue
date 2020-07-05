@@ -59,9 +59,9 @@
   </v-layout>
 </template>
 <script>
+import Stock from "@/components/inv/gases/GStock";
 import InventoryForm from "@/components/inv/gases/GInventory";
 import StatementList from "@/components/inv/gases/GStatementList";
-import Stock from "@/components/inv/gases/GStock";
 
 export default {
   layout: "inventory",
