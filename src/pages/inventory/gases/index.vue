@@ -60,9 +60,6 @@
     </v-flex>
   </v-layout>
 </template>
-    </v-flex>
-    </v-layout>
-</template>
 <script>
 import InventoryForm from "@/components/inv/gases/Inventory";
 import StatementList from "@/components/inv/gases/StatementList";
