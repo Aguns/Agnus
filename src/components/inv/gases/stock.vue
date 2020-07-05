@@ -1,11 +1,11 @@
 <template>
-<v-flex>
-  <v-card-title>
-    <v-text-field v-model="search" append-icon="search" label="Pesquisa" single-line hide-details></v-text-field>
-  </v-card-title>
-  <v-data-table :headers="headers" :items="pedding_Items" item-key="product" :search="search">
-    <template v-slot:item.businessArea="{ item }">{{ getPrincipalBussinessArea(item)}}</template>
-  </v-data-table>
+  <v-flex>
+    <v-card-title>
+      <v-text-field v-model="search" append-icon="search" label="Pesquisa" single-line hide-details></v-text-field>
+    </v-card-title>
+    <v-data-table :headers="headers" :items="pedding_Items" item-key="product" :search="search">
+      <template v-slot:item.businessArea="{ item }">{{ getPrincipalBussinessArea(item)}}</template>
+    </v-data-table>
   </v-flex>
 </template>
 <script>
@@ -18,7 +18,7 @@ export default {
     classifier: null,
     businessArea: [],
     headers: [],
-    url: ''
+    url: ""
   }),
   beforeMount: async function() {
     this.businessArea = await this.$store.dispatch(
@@ -26,24 +26,24 @@ export default {
       "businessArea"
     );
 
-    //Init for Gas document   
-    var fullPathEleInArray = this.$router.currentRoute.fullPath.split('/');
+    //Init for Gas document
+    var fullPathEleInArray = this.$router.currentRoute.fullPath.split("/");
     let doc = fullPathEleInArray[fullPathEleInArray.length - 1];
-   
+
     this.documentTypes = await this.$store.dispatch(
       "getDataAsync",
       `documenttypes/${doc}`
     );
 
-    console.log('DOCUMENT TYPEs: ', this.documentTypes);
+    console.log("DOCUMENT TYPEs: ", this.documentTypes);
 
     this.classifier = doc;
     let documentType = this.documentTypes[0];
-console.log('DOCUMENT TYPE: ', documentType);
+    console.log("DOCUMENT TYPE: ", documentType);
     if (documentType.isStockMovimentEntity) {
       this.url = `products/entity/${"all"}/filters?hasstock=${1}&type=${
         this.documentTypes[0].typeArticle
-    }`;
+      }`;
 
       this.headers = [
         {
@@ -62,9 +62,9 @@ console.log('DOCUMENT TYPE: ', documentType);
       ];
     }
 
-    console.log(documentType)
+    console.log(documentType);
     if (documentType.isStockMoviment) {
-        this.url = `products/warehouse/${"all"}/filters?hasstock=${1}&type=${
+      this.url = `products/warehouse/${"all"}/filters?hasstock=${1}&type=${
         this.documentTypes[0].typeArticle
       }`;
 
@@ -82,10 +82,10 @@ console.log('DOCUMENT TYPE: ', documentType);
         { text: "Stock", value: "stock" }
       ];
     }
-    console.log('URL 1++++++++++++', this.url);
+    console.log("URL 1++++++++++++", this.url);
     this.pedding_Items = await this.$store.dispatch("getDataAsync", this.url);
   },
-  methods:{
+  methods: {
     getPrincipalBussinessArea(item) {
       if (!item) return "";
 
