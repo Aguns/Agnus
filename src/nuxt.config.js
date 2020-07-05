@@ -1,16 +1,13 @@
 const pkg = require("./package");
 
 module.exports = {
-  server: {
-    host: '0.0.0.0',
-  },
-  render: {
-    // working:
-    injectScripts: process.env.NODE_ENV === 'development'
+  // render: {
+  //   // working:
+  //   injectScripts: process.env.NODE_ENV === 'development'
 
-    // HMR not working:
-    // injectScripts: false,
-  },
+  //   // HMR not working:
+  //   // injectScripts: false,
+  // },
 
   mode: 'spa',
   /*

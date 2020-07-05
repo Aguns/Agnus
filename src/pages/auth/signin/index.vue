@@ -2,7 +2,7 @@
   <v-app id="login" class="primary">
     <v-layout>
       <v-flex md6>
-        <v-img src="~/static/bg1.jpg" style="height: 100%"></v-img>
+        <img src="~/static/bg1.png" style="height: 100%"/>
       </v-flex>
       <v-flex md6>
         <v-content>
