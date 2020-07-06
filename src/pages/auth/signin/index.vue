@@ -34,7 +34,8 @@
                 <v-card>
                   <v-card-text>
                     <div class="layout column align-center">
-                      <img v-bind:src="logo" alt="Agnus CRM" />
+                    <v-avatar size="100"><img v-bind:src="logo" alt="Agnus CRM" /></v-avatar>
+                      
                       <p class="primary--text">Inicie a sessão com a sua conta</p>
                     </div>
                     <v-form>
