@@ -17,8 +17,8 @@
               <v-col class="py-0">
                 <v-list-item color="rgba(0, 0, 0, .4)" dark>
                   <v-list-item-content>
-                    <v-list-item-title class="title">Marcus Obrien</v-list-item-title>
-                    <v-list-item-subtitle>Network Engineer</v-list-item-subtitle>
+                    <v-list-item-title class="title">Belmiro Mahota</v-list-item-title>
+                    <v-list-item-subtitle>Engineer</v-list-item-subtitle>
                   </v-list-item-content>
                 </v-list-item>
               </v-col>
