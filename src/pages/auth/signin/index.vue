@@ -116,6 +116,7 @@ export default {
 
       await this.$store
         .dispatch("authenticateUser", {
+          username:this.model.email,
           email: this.model.email,
           password: this.model.password
         })

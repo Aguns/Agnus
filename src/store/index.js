@@ -123,6 +123,7 @@ export const actions = {
   async authenticateUser(vuexContext, user) {
     return await this.$axios
       .$post("/auth/login", {
+        username: user.username,
         email: user.email,
         password: user.password
       })
