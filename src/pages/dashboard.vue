@@ -246,7 +246,7 @@
   import ProjectList from "@/components/crm/project/List";
 
   export default {
-    layout: 'dashboard',
+   layout: 'dashboard', 
     components: {
       ProjectList,
       Calendar,

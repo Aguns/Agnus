@@ -9,7 +9,7 @@
     width="212"
   >
     <v-toolbar color="primary darken-1" dark>
-      <img src="../static/logo1.png" height="36" :alt="companyInfo.name + 'logo'" />
+      <img src="../static/logo.png" height="36" :alt="companyInfo.name + 'logo'" />
       <v-toolbar-title class="ml-0 pl-3">
         <span class="hidden-sm-and-down">{{companyInfo.name}}</span>
       </v-toolbar-title>
@@ -102,8 +102,8 @@ export default {
   },
   data: () => ({
     companyInfo: {
-      name: 'Belutécnica',
-      logo: "../static/logo1.png"
+      name: 'Agnus Crm',
+      logo: "../static/logo.png"
     },
     mini: false,
     scrollSettings: {

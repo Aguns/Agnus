@@ -7,6 +7,18 @@ const Menu = [
     name: 'Dashboard',
     href: '/dashboard'
   },
+
+  {hearder: 'hospitality'},
+  {
+    title: 'Hospitality',
+    group: 'Hosp',
+    component: 'Hosp',
+    icon: 'mdi-bed-outline',
+    items:[
+      {name: 'booking', icon: 'mdi-bed',title: 'Booking', href: '/hospitality/booking'},
+      {name: 'rooms', icon: 'mdi-bed',title: 'Rooms', href: '/hospitality/rooms'}
+    ]
+  },
   {header: 'Inventário'},
   {
     title: 'Inventário',

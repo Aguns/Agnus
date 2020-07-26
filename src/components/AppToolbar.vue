@@ -7,47 +7,12 @@
     <v-container class="mt-8">
       <v-flex class="pa-1">
         <v-row>
-          <v-col md="3">
-            <v-select
-              prepend-icon="mdi-store-outline"
-              v-model="branch"
-              :items="Branch"
-              label="Filial"
-              item-text="description"
-              item-value="code"
-              return-object
-              @input="selectBranch"
-            ></v-select>
-          </v-col>
-          <v-col md="3">
-            <v-select
-              prepend-icon="mdi-warehouse"
-              v-model="warehouse"
-              :items="Warehouse"
-              label="Armazém"
-              item-text="description"
-              item-value="code"
-              return-object
-              @input="selectWarehouse"
-            ></v-select>
-          </v-col>
-          <v-col md="3">
-            <v-select
-              prepend-icon="mdi-map-marker"
-              v-model="localization"
-              :items="Localization"
-              label="Localização"
-              item-text="description"
-              item-value="code"
-              return-object
-              @input="selectLocalization"
-            ></v-select>
-          </v-col>
+         
         </v-row>
       </v-flex>
     </v-container>
 
-    <!--v-menu
+    <v-menu
       offset-y
       origin="center center"
       :nudge-right="140"
@@ -63,7 +28,7 @@
         </v-btn>
       </template>
       <notification-list></notification-list>
-    </v-menu-->
+    </v-menu>
     <v-menu
       offset-y
       origin="center center"
