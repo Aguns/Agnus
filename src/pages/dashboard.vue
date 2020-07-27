@@ -242,13 +242,11 @@
   import ChatWindow from '@/components/chat/ChatWindow';
   import CircleStatistic from '@/components/widgets/statistic/CircleStatistic';
   import LinearStatistic from '@/components/widgets/statistic/LinearStatistic';
-  import Calendar from '@/components/base/Calendar'
-  import ProjectList from "@/components/crm/project/List";
+  import Calendar from '@/components/base/Calendar';
 
   export default {
    layout: 'dashboard', 
     components: {
-      ProjectList,
       Calendar,
       VWidget,
       MiniStatistic,

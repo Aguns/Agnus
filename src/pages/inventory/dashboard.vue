@@ -26,12 +26,11 @@
   import CircleStatistic from '@/components/widgets/statistic/CircleStatistic';
   import LinearStatistic from '@/components/widgets/statistic/LinearStatistic';
   import Calendar from '@/components/base/Calendar'
-  import ProjectList from "@/components/crm/project/List";
 
   export default {
     layout: 'inventory',
     components: {
-      ProjectList,
+
       Calendar,
       VWidget,
       MiniStatistic,
