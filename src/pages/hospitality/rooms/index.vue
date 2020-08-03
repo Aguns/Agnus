@@ -57,7 +57,6 @@
 
 <script>
 import { Rooms } from "@/api/hospitality/rooms";
-
 export default {
   layout: "dashboard",
   data() {
@@ -80,7 +79,6 @@ export default {
           href: "breadcrumbs_link_2",
         },
       ],
-
       search: "",
       headers: [
         { text: "Id", value: "id" },
@@ -95,7 +93,7 @@ export default {
   },
   methods: {
     detailsItem(value) {
-      this.$router.push("/hospitality/rooms/" + value.code);
+      this.$router.push("/hospitality/rooms/" + value.id);
     },
     editItem(value) {},
     deleteItem(value) {},

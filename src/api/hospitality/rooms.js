@@ -113,14 +113,48 @@ const Rooms = [
   }
 ];
 
-const RoomsType = ["Single", "Suite", "Double"];
+const RoomSchema = {
+  fields: [
+    {
+      type: "input",
+      inputType: "text",
+      label: "ID (disabled text field)",
+      model: "id",
+      readonly: true,
+      disabled: true
+    },
+    {
+      type: "input",
+      inputType: "text",
+      label: "Name",
+      model: "name",
+      placeholder: "Room Name",
+      featured: true,
+      required: true
+    },
+    {
+      type: "input",
+      inputType: "number",
+      label: "Price",
+      model: "price",
+      placeholder: "Room Price",
+      featured: true,
+      required: true
+    }
+  ]
+};
 
-const getRoomsById = id => {
-  return id === undefined ? Rooms[0] : Rooms.find(x => x.id === id);
+const RoomsType = [{ id: "Single" }, { id: "Suite" }, { id: "Double" }];
+
+const getRoomsById = (id) => {
+
+  let value = id * 1;
+
+  return Rooms.find(x => x.id === value);
 };
 
 const getRooms = limit => {
   return limit ? Rooms.slice(0, limit) : Rooms;
 };
 
-export { Rooms, RoomsType, getRoomsById, getRooms };
+export { Rooms, RoomSchema, RoomsType, getRoomsById, getRooms };

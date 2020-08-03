@@ -8,15 +8,15 @@ module.exports = {
   //   // injectScripts: false,
   // },
 
-  mode: 'spa',
+  mode: "spa",
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: process.env.npm_package_name || "",
     meta: [
-      {charset: 'utf-8'},
-      {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         hid: "description",
         name: "description",
@@ -26,66 +26,67 @@ module.exports = {
       }
     ],
     link: [
-      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       {
-        rel: 'stylesheet',
+        rel: "stylesheet",
         href:
-          'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'
+          "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons"
       }
     ],
     script: [
-      {src: 'https://cdnjs.cloudflare.com/ajax/libs/echarts/4.0.4/echarts-en.min.js'}
+      {
+        src:
+          "https://cdnjs.cloudflare.com/ajax/libs/echarts/4.0.4/echarts-en.min.js"
+      }
     ]
   },
 
   /*
-  ** Customize the progress-bar color
-  */
-  loading: {color: '#3adced'},
+   ** Customize the progress-bar color
+   */
+  loading: { color: "#3adced" },
 
   /*
-  ** Global CSS
-  */
+   ** Global CSS
+   */
   css: [
-
-    'font-awesome/css/font-awesome.css',
-    'roboto-fontface/css/roboto/roboto-fontface.css'
+    "font-awesome/css/font-awesome.css",
+    "roboto-fontface/css/roboto/roboto-fontface.css"
   ],
 
   router: {
-    middleware: 'router-auth'
+    middleware: "router-auth"
   },
 
   /*
-  ** Plugins to load before mounting the App
-  */
- plugins: ['~/plugins/axios'],
+   ** Plugins to load before mounting the App
+   */
+  plugins: [
+    { src: "~/plugins/axios", mode: "client" },
+    { src: "~/plugins/formgenerator", mode: "client" },
+    { src: "~/plugins/validate", mode: "client" }
+  ],
 
   /*
-  ** Nuxt.js modules
-  */
- modules:
- [
-    ['nuxtjs-mdi-font'],
-    ["nuxt-validate"],
-    ['@nuxtjs/axios'],
-    ['@nuxtjs/auth'],
+   ** Nuxt.js modules
+   */
+  modules: [
+    ["nuxtjs-mdi-font"],
+    ["@nuxtjs/axios"],
+    ["@nuxtjs/auth"],
     ["@nuxtjs/dotenv"]
-
- ],
- /*
-  ** Nuxt.js dev-modules
-  */
- buildModules: ["@nuxtjs/vuetify"],
+  ],
+  /*
+   ** Nuxt.js dev-modules
+   */
+  buildModules: ["@nuxtjs/vuetify"],
 
   /*
    ** Build configuration
    */
-  build: {
-    
-  },
+  build: {},
 
   env: {
-    baseUrl: process.env.BASE_URL || 'https://localhost:8080/api'
+    baseUrl: process.env.BASE_URL || "https://localhost:8080/api"
   }
-}
+};
