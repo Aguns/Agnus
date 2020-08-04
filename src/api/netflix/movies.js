@@ -1,41 +1,69 @@
-export default[
-    {
-        "id": "shaun-of-the-dead",
-        "name": "Shaun of the Dead",
-        "description":
-            "Shaun lives a supremely uneventful life, which revolves around his girlfriend, his mother, and, above all, his local pub. This gentle routine is threatened when the dead return to life and make strenuous attempts to snack on ordinary Londoners.",
-        "thumbnailSrc": "https://image.tmdb.org/t/p/original/2evlcGnsfdFWLb7geNlIjIewc0Q.jpg",
-        "bannerSrc": "https://image.tmdb.org/t/p/original/50mMiR0R1QclaAODTutwXBrReLJ.jpg",
-        "releaseDate": "09/24/2004",
-        "durationMinutes": 99,
-        "genres": ["Horror", "Comedy"],
-        "trailerUrl": "https://youtube.com/embed/CfBewQPFdKE",
-        "favorite": false
-    },
-    {
-        "id": "the-worlds-end",
-        "name": "The World's End",
-        "description":
-            "Five friends who reunite in an attempt to top their epic pub crawl from 20 years earlier unwittingly become humankind's only hope for survival.",
-        "thumbnailSrc": "https://image.tmdb.org/t/p/original/7xZUJMqGBLvhPJqn23UM3yUC5k5.jpg",
-        "bannerSrc": "https://image.tmdb.org/t/p/original/4cib8AD7uUc3qc5LsAlRbewg0Zk.jpg",
-        "releaseDate": "08/23/2013",
-        "durationMinutes": 109,
-        "genres": ["Comedy", "Action", "Science Fiction"],
-        "trailerUrl": "https://youtube.com/embed/ayTnvVpj9t4",
-        "favorite": false
-    },
-    {
-        "id": "hot-fuzz",
-        "name": "Hot Fuzz",
-        "description":
-            "Top London cop, PC Nicholas Angel is good. Too good. To stop the rest of his team from looking bad, he is reassigned to the quiet town of Sandford, paired with simple country cop, and everything seems quiet until two actors are found decapitated. It is addressed as an accident, but Angel isn't going to accept that, especially when more and more people turn up dead.",
-        "thumbnailSrc": "https://image.tmdb.org/t/p/original/5Jx6s6VXnunh8wCLgR0YgjwSgjh.jpg",
-        "bannerSrc": "https://image.tmdb.org/t/p/original/hRGhxu90TLsatD2gtdy98oobtyB.jpg",
-        "releaseDate": "04/20/2007",
-        "durationMinutes": 121,
-        "genres": ["Crime", "Comedy", "Action"],
-        "trailerUrl": "https://youtube.com/embed/ayTnvVpj9t4",
-        "favorite": false
-    }
-]
+const movies = {
+  "Rock-Lee-vs-Gaara": {
+    id: "Rock-Lee-vs-Gaara",
+    title: "Rock Lee vs Gaara - Episodo 39",
+    subtitle: "Rock Lee vs Gaara - Episodo 39",
+    description: `Rock Lee vs Gaara - Naruto Clássico - Luta Completa.`,
+    smallImgSrc: require("@/static/movies/naruto/naruto_garra.jpg"),
+    largeImgSrc: require("@/static/movies/naruto/naruto_garra.jpg"),
+    releaseDate: "July 21 2017",
+    duration: "1hr 46min",
+    genre: "Action, Drama, History",
+    trailerPath: "https://www.youtube.com/embed/E0xsfehI0hI",
+    favorite: false
+  },
+  "SASUKE-vs-GAARA": {
+    id: "SASUKE-vs-GAARA",
+    title: "SASUKE vs GAARA - Episodo 39",
+    subtitle: "SASUKE vs GAARA - Episodo 39",
+    description: `SASUKE vs GAARA - Sasuke mostra os resultados do treinamento com Kakashi e impressiona a todos !`,
+    largeImgSrc: require("@/static/movies/naruto/sasuke.jpg"),
+    smallImgSrc: require("@/static/movies/naruto/sasuke.jpg"),
+    releaseDate: "November 7 2014",
+    duration: "2hr 49min",
+    genre: "Adventure, Drama",
+    trailerPath: "https://www.youtube.com/embed/jhTiFeR0koI",
+    favorite: false
+  },
+  "the-dark-knight-rises": {
+    id: "the-dark-knight-rises",
+    title: "NARUTO VS PAI - Episodo 39",
+    subtitle: "NARUTO VS PAI - Episodo 39" ,
+    description: `NARUTO VS PAIN | PARTE 1 | NARUTO SHIPPUDEN | EPISÓDIO 164 AO 166 LEGENDADO EM PORTUGUÊS PT-BR`,
+    smallImgSrc: require("@/static/movies/naruto/naruto1.jpg"),
+    largeImgSrc: require("@/static/movies/naruto/naruto1.jpg"),
+    releaseDate: "July 20 2012",
+    duration: "2hr 44min",
+    genre: "Action, Thriller",
+    trailerPath: "https://www.youtube.com/embed/UXoq3lXzDjA",
+    favorite: false
+  },
+  inception: {
+    id: "inception",
+    title: "O Heroi de Konoha - Episodo 39",
+    subtitle: "O Heroi de Konoha - Episodo 39",
+    description: `Cobb, a skilled thief is offered a chance to regain his old life as payment for a task considered to be impossible: \"inception\", the implantation of another person's idea into a target's subconscious.`,
+    smallImgSrc: require("@/static/movies/naruto/sasuke.jpg"),
+    largeImgSrc: require("@/static/movies/naruto/sasuke.jpg"),
+    releaseDate: "July 10 2010",
+    duration: "2hr 28min",
+    genre: "Action, Adventure, Sci-Fi",
+    trailerPath: "https://www.youtube.com/embed/8hP9D6kZseM",
+    favorite: false
+  },
+  "the-prestige": {
+    id: "the-prestige",
+    title: "A Sakura",
+    subtitle: "Sakura perde memoria",
+    description: `A mysterious story of two magicians whose intense rivalry leads them on a life-long battle for supremacy - to create the ultimate illusion whilst sacrificing everything they have to outwit the other.`,
+    smallImgSrc: require("@/static/movies/naruto/sakura.jpg"),
+    largeImgSrc: require("@/static/movies/naruto/sakura.jpg"),
+    releaseDate: "October 20 2006",
+    duration: "2hr 10min",
+    genre: "Drama, Mystery, Sci-Fi",
+    trailerPath: "https://www.youtube.com/embed/ijXruSzfGEc",
+    favorite: false
+  }
+};
+
+export { movies };
