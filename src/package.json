@@ -12,12 +12,16 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxt/http": "^0.5.12",
     "@nuxtjs/auth": "^4.8.5",
     "@nuxtjs/axios": "^5.9.5",
     "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/pwa": "^3.0.0-beta.19",
+    "algorithmia": "^0.3.10",
+    "bulma": "^0.5.3",
     "cross-env": "^6.0.3",
     "font-awesome": "^4.7.0",
+    "fs": "0.0.1-security",
     "lodash.truncate": "4.4.2",
     "moment": "^2.24.0",
     "nuxt": "^2.13.3",
@@ -31,8 +35,7 @@
     "vue-perfect-scrollbar": "^0.2.1",
     "vue-quill-editor": "^3.0.6",
     "vuetify": "^2.1.15",
-    "vuetify-loader": "^1.4.3",
-    "bulma": "^0.5.3"
+    "vuetify-loader": "^1.4.3"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
