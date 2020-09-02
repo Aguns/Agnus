@@ -67,6 +67,8 @@ Vuetify is developed exactly according to Material Design spec. Every component 
 - [NuxtJs](https://nuxtjs.org/) for the wonderful vue framework <3
 - [Vuetify](https://vuetifyjs.com/en/) for the beautiful vue framework UI
 - [Vuetify Material Admin](https://github.com/tookit/vue-material-admin) 
+- [Vue Form Generator](https://github.com/vue-generators/vue-form-generator)
+- [Vue Validate](https://logaretm.github.io/vee-validate)
 
 #### Your Challenge
 [Big - Giant](https://dev.to/subs/big-giant-vue-apps-5048) - Vue Apps
