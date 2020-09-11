@@ -74,8 +74,14 @@ module.exports = {
     ["nuxtjs-mdi-font"],
     ["@nuxtjs/axios"],
     ["@nuxtjs/auth"],
-    ["@nuxtjs/dotenv"]
+    ["@nuxtjs/dotenv"],
+    ['@nuxt/http'],
+    ['@nuxtjs/proxy']
   ],
+
+  proxy: {
+    '/api/': { target: 'https://api.algorithmia.com/', pathRewrite: {'^/api/': ''} }
+  },
   /*
    ** Nuxt.js dev-modules
    */
@@ -84,7 +90,17 @@ module.exports = {
   /*
    ** Build configuration
    */
-  build: {},
+  build: {
+    extend (config, { isDev, isClient }) {
+ 
+      config.node = {
+           fs: 'empty'
+       }
+
+      // ....
+   }
+
+  },
 
   env: {
     baseUrl: process.env.BASE_URL || "https://localhost:8080/api"
