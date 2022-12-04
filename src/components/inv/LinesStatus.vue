@@ -75,7 +75,7 @@ export default {
   data: () => ({
     lineStatus:{
       id: 0,
-      status= null,
+      status: null,
       LineRepair:null
     },
     editLineStatus:{

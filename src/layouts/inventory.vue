@@ -17,8 +17,8 @@
             <span class="caption mr-1">
               Developed & supported by
               <a
-                href="https://www.incentea.com/pt/home?country=mocambique"
-              >ínCentea MZ</a>
+                href="https://gmahota.netlify.app"
+              >Guimarães Mahota</a>
             </span>
             <!--v-icon color="pink" small>favorite</v-icon-->
           </v-footer>

@@ -13,9 +13,14 @@
           <!-- App Footer -->
           <v-footer height="auto" class="white pa-3 app--footer">
             <span class="caption">&copy; {{ new Date().getFullYear() }}</span>
-            <!--v-spacer></v-spacer-->
-            <!--span class="caption mr-1">Made with love</span>
-            <v-icon color="pink" small>favorite</v-icon-->
+            <v-spacer></v-spacer>
+            <span class="caption mr-1">
+              Developed & supported by
+              <a
+                href="https://gmahota.netlify.app"
+              >Guimarães Mahota</a>
+            </span>
+            <!--v-icon color="pink" small>favorite</v-icon-->
           </v-footer>
         </v-content>
         <!-- Go to top -->
@@ -66,7 +71,7 @@ import ThemeSettings from '@/components/ThemeSettings'
 
 export default {
   watchQuery: true,
-  middleware: 'custom-auth',
+  // middleware: 'custom-auth',
   components: {
     AppDrawer,
     AppToolbar,
