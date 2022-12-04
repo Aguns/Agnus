@@ -58,40 +58,40 @@ const Menu = [
 
     ]
   },*/
-  // {header: 'Human Resources'},
-  // {
-  //   title: 'Rh',
-  //   group: 'rh',
-  //   component: 'rh',
-  //   icon: 'reorder',
-  //   items: [
-  //     {name: 'ability', icon: 'reorder',title: 'Avaliação', href: '/rh/avaliacao'},
-  //   ]
-  // },
-  /*{
+  {header: 'Human Resources'},
+  {
+    title: 'Rh',
+    group: 'rh',
+    component: 'rh',
+    icon: 'reorder',
+    items: [
+      {name: 'ability', icon: 'reorder',title: 'Avaliação', href: '/rh/avaliacao'},
+    ]
+  },
+  {
     title: 'Order',
     group: 'apps',
     icon: 'mdi-clipboard-check',
     name: 'order',
     href: '/order/create'
-  },*/
-  // {
-  //   title: 'Appointment',
-  //   group: 'apps',
-  //   icon: 'tune',
-  //   name: 'appointment',
-  //   href: '/crm/appointment/'
-  // },
-/*  {header: 'Projects'},
+  },
+   {
+     title: 'Appointment',
+     group: 'apps',
+     icon: 'tune',
+     name: 'appointment',
+     href: '/crm/appointment/'
+   },
+  {header: 'Projects'},
   {
     title: 'Project',
     group: 'projects',
     icon: 'mdi-layers',
     name: 'project',
     href: '/project/'
-  },*/
+  },
 
-  
+
   {header: 'Administração'},
   {
     title: 'Utilizadores',
