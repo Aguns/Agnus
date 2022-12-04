@@ -5,8 +5,8 @@ let url = 'https://192.168.3.106:5001/';
 const Projects = [
   {
     code: "RECCA_3818",
-    summary:"ESCRITÓRIO -  fracção autonoma A4, R/C loja nº 4, inserido no talhão nº 85",
-    description: "ESCRITÓRIO -  fracção autonoma A4, R/C loja nº 4, inserido no talhão nº 85, implantado num lote de terreno com uma área de 1.399,95 m2, localizado na Av. José Cabral esquina com a Rua Gago Coutinho, Cidade de Nampula.",
+    summary:"ESCRITÓRIO -  fracção autonoma A4, R/C loja nº 43, inserido no talhão nº 854",
+    description: "ESCRITÓRIO -  fracção autonoma A4, R/C loja nº 43, inserido no talhão nº 852, implantado num lote de terreno com uma área de 1.399,95 m2, localizado na Av. José Cabral esquina com a Rua Gago Coutinho, Cidade de Nampula.",
     barcode: "8850585992458",
     year: 2019,
     deadline: '2 days later',
@@ -15,11 +15,11 @@ const Projects = [
     status: 'In progress',
     client:{
       code:'C001',
-      name:"Banco Único"
+      name:"Banco AAAA"
     },
     proponent:{
       code:'P001',
-      name:"Paginas Amarelas"
+      name:"Paginas AAAA"
     },
     supervisor:{
       code:'F002',
@@ -40,11 +40,11 @@ const Projects = [
     status: 'Approved',
     client:{
       code:'C002',
-      name:"BIM"
+      name:"BIMA"
     },
     proponent:{
       code:'P001',
-      name:"Accsys"
+      name:"AAAA"
     },
     supervisor:{
       code:'F002',
@@ -65,15 +65,15 @@ const Projects = [
     status: 'done',
     client:{
       code:'C001',
-      name:"Banco Único"
+      name:"Banco ASS"
     },
     proponent:{
       code:'P001',
-      name:"Meridian"
+      name:"ASDD"
     },
     supervisor:{
       code:'F001',
-      name:'João Neto'
+      name:'João '
     },
     state:"Proposal",
     type:"Aval"
@@ -94,11 +94,11 @@ const Projects = [
     },
     proponent:{
       code:'P001',
-      name:"Meridian"
+      name:"ZAAAA"
     },
     supervisor:{
       code:'F001',
-      name:'João Neto'
+      name:'João '
     },
     state:"Proposal",
     type:"Est",
